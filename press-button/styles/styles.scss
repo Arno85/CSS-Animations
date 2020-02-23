@@ -1,0 +1,52 @@
+$background-color: rgba(#FCD04B, 0.4);
+$text-color: #FFF;
+$button-color: #FCAD26;
+$button-shadow-color: #EFA424;
+$button-shadow-Y: 8px;
+$font-family: Boogaloo;
+
+
+body {
+	
+	background: $background-color;
+	margin: 0;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+	
+	&> * {
+		font-family: $font-family;
+		color: $text-color;
+		text-transform: uppercase;
+		font-weight: 900;
+	}
+	
+	button {
+		position: relative;
+		display: block;
+		
+		outline: none;
+		border: none;
+		cursor: pointer;
+		
+		background-color: $button-color;
+		font-size: 1rem;
+		letter-spacing: 2px;
+		padding: 25px 75px;
+		margin: 0 auto;
+		border-radius: 20px;
+		box-shadow: 0 $button-shadow-Y $button-shadow-color;
+
+		&:hover {
+			box-shadow: 0 calc(#{$button-shadow-Y} / 2) $button-shadow-color;
+			top: calc(#{$button-shadow-Y} / 2)
+		}
+
+		&:active {
+			box-shadow: none;
+			top: $button-shadow-Y;
+		}
+		
+	}
+}
