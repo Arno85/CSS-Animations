@@ -1,0 +1,58 @@
+body {
+  background: #dcf5ff;
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", "sans-serif";
+}
+
+.inner {
+  background: #07daa5;
+  padding: 2em;
+  border-radius: 10px;
+  width: 300px;
+  color: white;
+  -webkit-clip-path: circle(8% at 90% 15%);
+          clip-path: circle(8% at 90% 15%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+
+.inner span {
+  color: white;
+  font-weight: bold;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  position: absolute;
+  top: 9%;
+  right: 5.5%;
+  margin-right: 4%;
+  font-size: 1.2rem;
+  opacity: 1;
+}
+
+.inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background: #00b6ff;
+}
+
+.inner:hover span {
+  opacity: 0;
+}
+
+.inner h1 {
+  margin: 0;
+}
+
+.inner p {
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=styles.css.map */
